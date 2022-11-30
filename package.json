@@ -5,7 +5,7 @@
   "scripts": {
     "build": "webpack",
     "watch": "webpack -w",
-    "start": "kservez --ssl -p=4445 public"
+    "start": "npm run build && kservez -p=4445 public"
   },
   "keywords": [],
   "author": "",

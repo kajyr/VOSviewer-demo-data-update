@@ -3,9 +3,8 @@
 How to run:
 
 1. install dependencies with `npm i`
-2. build the frontend with `npm run build` or keep it watching with `npm run watch`
-3. run the local server with `npm start`
-4. open https://localhost:4445
+2. run the local server with `npm start`
+3. open http://localhost:4445
 
 # Notes
 
