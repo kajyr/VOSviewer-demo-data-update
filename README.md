@@ -10,3 +10,5 @@ How to run:
 # Notes
 
 The Viewer freeze seems to happen when a new data object is sent to the react component. In looker this is troublesome because on every UI changes the app sends a new data object back, even if the data itself is not different.
+
+The issue arises also when toggling the `parameters` of the component.

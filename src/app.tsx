@@ -4,7 +4,8 @@ import dataset1 from "./dataset-1";
 import dataset2 from "./dataset-2";
 
 const App = () => {
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(true);
+  const [largest, setLargest] = useState(true);
 
   return (
     <div>
@@ -12,12 +13,15 @@ const App = () => {
         <button onClick={() => setToggle(!toggle)}>
           Load a different dataset
         </button>
+        <button onClick={() => setLargest(!largest)}>
+          Toggle largest_component option
+        </button>
       </div>
       <div style={{ width: "100%", maxHeight: "500px", height: "50vh" }}>
         <VOSviewerOnlineDimensions
           data={toggle ? dataset1 : dataset2}
           parameters={{
-            largest_component: true,
+            largest_component: largest,
             looker_ui: true,
             simple_ui: true,
           }}
